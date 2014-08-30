@@ -391,12 +391,12 @@ img {
     border-radius: 25px;
 }
 curb img{
-  border: 6px solid #87CEEB !important;
+  border: 6px solid #ddd !important;
   background: transparent !important;
   float: right !important;
   width: 150px !important;
   height: 150px !important;
-  border-radius: 15px;
+  border-radius: 1px;
   padding: 0px 0px 0px 0px !important;
 }
 
