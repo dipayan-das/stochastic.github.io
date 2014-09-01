@@ -19,6 +19,7 @@
     width: 300px;
     border-radius: 25px;
         }
+        
     .classname {-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
   -webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
   box-shadow:inset 0px 1px 0px 0px #fce2c1;
@@ -26,23 +27,23 @@
   background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
   background-color:#ffc477;
-  -webkit-border-top-left-radius:13px;
-  -moz-border-radius-topleft:13px;
-  border-top-left-radius:13px;
-  -webkit-border-top-right-radius:13px;
-  -moz-border-radius-topright:13px;
-  border-top-right-radius:13px;
-  -webkit-border-bottom-right-radius:13px;
-  -moz-border-radius-bottomright:13px;
-  border-bottom-right-radius:13px;
-  -webkit-border-bottom-left-radius:13px;
-  -moz-border-radius-bottomleft:13px;
-  border-bottom-left-radius:13px;
+  -webkit-border-top-left-radius:8px;
+  -moz-border-radius-topleft:8px;
+  border-top-left-radius:8px;
+  -webkit-border-top-right-radius:8px;
+  -moz-border-radius-topright:8px;
+  border-top-right-radius:8px;
+  -webkit-border-bottom-right-radius:8px;
+  -moz-border-radius-bottomright:8px;
+  border-bottom-right-radius:8px;
+  -webkit-border-bottom-left-radius:8px;
+  -moz-border-radius-bottomleft:8px;
+  border-bottom-left-radius:8px;
   text-indent:0;
   border:1px solid #eeb44f;
   display:inline-block;
   color:#ffffff;
-  font-family:Comic Sans MS;
+  font-family:Arial;
   font-size:14px;
   font-weight:bold;
   font-style:normal;
@@ -89,16 +90,21 @@
           <hr>
           <section id="" class="clearfix">
            <a href="images/full_cv.pdf" id="download-zip" class="button" ><span> Download CV</span></a>
-           <a href="#" id="download-tar-gz" class="button"><span><abar>&nbsp&nbsp&nbsp&nbspProject</abar></span></a>
+           <a href="#" id="download-tar-gz" class="button"><span>Project / About</span></a>
            <a href="https://github.com/dipayan-das/stochastic.github.io" id="view-on-github" target="_blank" class="button"><span>View on GitHub</span></a>
          </section>
         </header>
-
+        
+        <section id="main_content">
         <hr>
 
-        <section id="main_content">
         <bhulbhal>About</bhulbhal>
-          <h5>Hi!!  I am Dipayan,from India.an enthusiastic <abar>Programmer</abar>,<abar>Roboticist</abar> and <abar>Cook</abar>.In free time,I love to read science articles...mostly related to physics or sometimes try to make trivial but interesting self-made algorithm.Artificial Intelligence extremely fascinates me and have self taught myself the basics of AI thanks to <a href="https://www.udacity.com/courses#!/all" target="_blank">Udacity.com</a>.In future I hope to make contribution to my subject of interests</h5>
+        <p>__________________________________________________________________</p>
+          <h5><p>Hi!!  I am Dipayan.I grow up in India,West Bengal.From my child hood I discover,I have an affinity of seperating and then making something out of it.Dad's watch was the 1st victim,Slowly I grew interest on robotics,and have worked with Arduino,Pic-axe and Raspberry-Pi in my college.I am a member of <a href="http://letsmakerobots.com/">LMR</a></p>
+          <p>
+          In LMR I came to know about the google Car and found it very intriguing.From then on,I have self taught myself the basics of AI from <a href="https://www.udacity.com/courses#!/all" target="_blank">Udacity.com</a> and many other contributors in youtube and other sites.In free time,I love to read science articles...play fifa with my friends,or try out some new dishes.My prymary interest revolves in Robotics,Algorithm design,Signal processing,Machine learning,And designing robots structures and chesis.</p>
+          <p>In future I hope to make significant contribution to my subject of interests.I strongly believe,that 20 to 30 years from today robots will be an important factor in day to day life</p>
+          </h5>
         </section>
         <hr>
         <section id="2nd_content">
@@ -118,7 +124,7 @@
           <hid id="2">
           <img id="x" src="images/29.png" border=""><ul><abar>Project Partners</abar> - Dibyendu Das (Tufts University, Graduate Student)</li></ul>
           <form>The aim of this project is to create 29 (a card game very popular in eastern Asia <a href="http://en.wikipedia.org/wiki/Twenty-eight_(card_game)" target="_blank">Wiki</a>).and played with 4 player, and the challenge is to make the Computer Player recognize the human players playing attribute and respond to it accordingly.<br><br>
-           <h5>The project is currently on beta stage.</h5>
+           <h4>The project is currently under development</h4>
           </form>
           </hid>
         </section>
@@ -134,7 +140,10 @@
                 $( "#2nd_content" ).hide();
             });
           $( "#download-tar-gz" ).click(function() {
-            $( "#2nd_content" ).slideToggle( 1000 );;
+            $( "#main_content" ).slideToggle( 1000 );
+            $( "#2nd_content" ).slideToggle( 1000 );
+             $( "#1" ).hide();
+                $( "#2" ).hide();
           });
           $( "#megus" ).click(function() {
             $( "#1" ).slideToggle( 1000 );

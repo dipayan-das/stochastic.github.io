@@ -65,7 +65,7 @@ bhulbhal{
   line-height: 1.2;
 }
 a {
-  font-size: 20px;
+  font-size: 17px;
   color: #d5000d;
 }
 a:hover {
@@ -172,7 +172,7 @@ a.button span {
   margin-right: 0;
 }
 abar{
-  font-size: 12px;
+  font-size: 17px;
   color: #f24537;
 }
 code, pre {
